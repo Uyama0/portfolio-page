@@ -5,7 +5,7 @@ import { Header } from "./header/Header";
 export const Layout = () => {
   return (
     <div>
-      {/* <CursorBlob /> */}
+      <CursorBlob />
       <div className="max-w-5xl w-full mx-auto flex flex-col">
         <Header />
         <About />
