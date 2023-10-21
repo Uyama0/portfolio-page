@@ -1,5 +1,6 @@
 import { About } from "./about/About";
 import { CursorBlob } from "./cursorBlob/CursorBlob";
+import Footer from "./footer/Footer";
 import { Header } from "./header/Header";
 
 export const Layout = () => {
@@ -11,8 +12,8 @@ export const Layout = () => {
         <div className="">
           <About />
         </div>
-        dwq
       </div>
+      {/* <Footer /> */}
     </div>
   );
 };

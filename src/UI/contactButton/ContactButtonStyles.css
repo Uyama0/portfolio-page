@@ -1,0 +1,11 @@
+.button {
+  @apply border-[1px] bg-white p-5 font-bold border-black w-full border-dashed rounded-lg md:rounded-none md:h-32 md:w-40;
+}
+
+.button.clone {
+  position: absolute;
+  left: 0;
+  background-color: black;
+  z-index: -1;
+  color: white;
+}
