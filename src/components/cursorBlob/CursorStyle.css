@@ -3,11 +3,26 @@
   height: 100%;
   aspect-ratio: 1;
   position: absolute;
-  left: 50%;    
+  left: 50%;
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
+  background: rgb(19, 12, 121);
+  background: radial-gradient(
+    circle,
+    rgba(19, 12, 121, 1) 6%,
+    rgba(38, 22, 136, 1) 21%,
+    rgba(174, 28, 64, 1) 42%,
+    rgba(233, 98, 124, 1) 69%
+  );
+  /* background: rgb(138, 60, 187);
+  background: radial-gradient(
+    circle,
+    rgba(138, 60, 187, 1) 6%,
+    rgba(174, 17, 119, 1) 21%,
+    rgba(174, 28, 64, 1) 42%,
+    rgba(233, 98, 124, 1) 69%
+  ); */
   animation: rotate 180s infinite;
   opacity: 0.8;
   z-index: -2;
