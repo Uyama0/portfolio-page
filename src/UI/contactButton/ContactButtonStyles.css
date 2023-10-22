@@ -1,11 +1,16 @@
 .button {
-  @apply border-[1px] bg-white p-5 font-bold border-black w-full border-dashed rounded-lg md:rounded-none md:h-32 md:w-40;
+  @apply border-[1px] bg-black p-5 font-bold border-white w-full border-dashed rounded-lg md:rounded-none md:h-32 md:w-48;
 }
 
 .button.clone {
   position: absolute;
   left: 0;
-  background-color: black;
+  background: rgb(138, 60, 187);
+  background: linear-gradient(
+    153deg,
+    rgba(138, 60, 187, 1) 18%,
+    rgba(233, 98, 124, 1) 82%
+  );
   z-index: -1;
-  color: white;
+  color: black;
 }

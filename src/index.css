@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-white overflow-x-hidden;
+    @apply bg-black text-white overflow-x-hidden;
   }
 
   h1 {
@@ -14,3 +14,4 @@
     @apply font-Manrope text-lightgray font-light leading-[150%] tracking-[0.5px];
   }
 }
+  
