@@ -7,7 +7,7 @@ import { Works } from "./works/Works";
 export const Layout = () => {
   return (
     <div>
-      <CursorBlob />
+      {/* <CursorBlob /> */}
       <div className="px-4 pb-6 md:p-0 md:max-w-5xl w-full mx-auto flex flex-col">
         <Header />
         <div>

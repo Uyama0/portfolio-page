@@ -17,7 +17,7 @@
     rgba(174, 28, 64, 1) 42%,
     rgba(233, 98, 124, 1) 69%
   ); */
-  animation: rotate 180s infinite;
+  animation: rotate 30s infinite;
   opacity: 0.8;
   z-index: -2;
 }
