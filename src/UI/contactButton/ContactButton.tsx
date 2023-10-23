@@ -11,7 +11,7 @@ function ContactButton({ title }: ContactButtonProps) {
     <>
       <div>
         <motion.button id="button">
-          <h2 className="z-10 text-white relative">{title}</h2>
+          <h2 className="relative">{title}</h2>
         </motion.button>
       </div>
     </>
