@@ -1,10 +1,11 @@
 import React from "react";
-import { Card } from "../../UI/card/Card";
+import { Card } from "../../UI/card/Card.jsx";
 
 export const Works = () => {
   return (
-    <div id="cards" className="grid grid-cols-4 gap-2">
-      <div className="col-span-2">
+    <div className="grid gap-4">
+      <div className="grid-col-s">
+        <Card></Card>
         <Card></Card>
       </div>
       <Card></Card>

@@ -5,7 +5,7 @@
 }
 
 #button {
-  @apply border bg-black p-5 font-bold border-white w-full relative rounded-lg md:rounded-none md:h-32 md:w-48;
+  @apply border bg-transparent p-5 font-bold border-white w-full relative rounded-lg md:rounded-none md:h-32 md:w-48;
 }
 
 #button:before {

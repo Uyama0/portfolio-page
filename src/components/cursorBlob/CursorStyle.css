@@ -1,5 +1,5 @@
 #blob {
-  height: 120%;
+  height: 100%;
   aspect-ratio: 1;
   position: fixed;
   left: 50%;
@@ -9,14 +9,6 @@
   background-position: center center;
   background-repeat: repeat;
   background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CradialGradient id=%22b%22 r=%22100%25%22 cx=%2253%25%22 cy=%2250%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23fa0137%22%2F%3E%3Cstop offset=%2250%25%22 stop-color=%22%23482991%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%231b32b6%22%2F%3E%3C%2FradialGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M872 654.5Q809 809 654.5 891t-304-5Q201 799 169 649.5T162.5 344Q188 188 344 126t295.5 16.5Q779 221 857 360.5t15 294Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M872 654.5Q809 809 654.5 891t-304-5Q201 799 169 649.5T162.5 344Q188 188 344 126t295.5 16.5Q779 221 857 360.5t15 294Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  /* background: rgb(19, 12, 121);
-  background: radial-gradient(
-    circle,
-    rgba(19, 12, 121, 1) 6%,
-    rgba(38, 22, 136, 1) 21%,
-    rgba(174, 28, 64, 1) 42%,
-    rgba(233, 98, 124, 1) 69%
-  ); */
   animation: rotate 30s infinite;
   opacity: 0.8;
   z-index: -2;
