@@ -38,7 +38,7 @@ export const CursorBlob = () => {
     <>
       <motion.div
         id="blob"
-        animate={{ scale: scale }}
+        // animate={{ scale: scale }}
         transition={{
           type: "spring",
         }}

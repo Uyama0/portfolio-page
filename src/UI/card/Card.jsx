@@ -62,19 +62,7 @@ export const Card = () => {
         rotateX: rotations.y,
         transformPerspective: rotations.z * 100,
       }}
-      style={{
-        width: "240px",
-        height: "320px",
-
-        // backgroundColor: "#C2B8F0",
-        borderRadius: "0.5rem",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        transformStyle: "preserve-3d",
-        transformOrigin: "center",
-        perspective: "320px",
-      }}
+      className="w-60 h-80 rounded-md flex bg-pink-900 items-center justify-center presev"
     >
       <motion.div
         className="border border-white"
