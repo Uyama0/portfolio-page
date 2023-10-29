@@ -4,6 +4,9 @@ function Footer() {
   return (
     <>
       <footer className="mx-5">
+        <div className="w-screen h-32">
+          <h2 className="text-[100%]">uyama</h2>
+        </div>
         <div className="flex flex-col md:flex-row gap-3">
           <div className="flex flex-col justify-end">
             <p className="text-2xl uppercase">get in touch</p>
