@@ -2,9 +2,19 @@ import { Card } from "../../UI/card/Card.jsx";
 
 export const Works = () => {
   return (
-    <div className="grid grid-cols-2 gap-4">
-      <div className="block w-30 h-60 bg-white col-span-1"></div>
-      <Card cardHeight="h-60" cardWidth="w-30" cardColSpan="col-span-1"></Card>
+    <div className="grid gap-4">
+      <div className="group grid grid-cols-3 h-60 gap-4">
+        <Card cardHeight="" cardColSpan="col-span-1"></Card>
+        <Card cardHeight="" cardColSpan="col-span-1"></Card>
+        <Card cardHeight="" cardColSpan="col-span-1"></Card>
+      </div>
+      <div className="group grid grid-cols-2 h-80 gap-4">
+        <Card cardHeight="" cardColSpan="col-span-1"></Card>
+        <Card cardHeight="" cardColSpan="col-span-1"></Card>
+      </div>
+      <div className="group grid grid-cols-1 h-60 gap-4">
+        <Card cardHeight="" cardColSpan="col-span-1"></Card>
+      </div>
     </div>
   );
 };

@@ -14,18 +14,6 @@ export const Layout = () => {
           <About />
           <Works />
         </div>
-        <div className="grid gap-4">
-          <div className="col-start-0 col-end-2 h-40 bg-gray-200 p-4 bg-black">
-            1/3
-          </div>
-          <div className="col-span-1 bg-black h-40 md:col-span-2 bg-gray-300 p-4">
-            2/3
-          </div>
-          <div className="col-span-3 bg-black bg-gray-400 p-4">3/3</div>
-          <div className="col-span-1 bg-black bg-gray-500 p-4">1/3</div>
-          <div className="col-span-1 bg-black bg-gray-600 p-4">1/3</div>
-          <div className="col-span-1 bg-black bg-gray-700 p-4">1/3</div>
-        </div>
       </div>
       <Footer />
     </div>

@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 import { round, distance } from "../../utilities/tiltCard";
 
 interface CardProps {
-  cardWidth: string;
   cardHeight: string;
   cardColSpan: string;
 }
 
-export const Card = ({ cardWidth, cardHeight, cardColSpan }: CardProps) => {
+export const Card = ({ cardHeight, cardColSpan }: CardProps) => {
   const [rotations, setRotations] = useState({ x: 0, y: 0, z: 0 });
   const [isAnimating, setAnimating] = useState(false);
   const isAnimatingReference = useRef(isAnimating);
@@ -58,9 +57,9 @@ export const Card = ({ cardWidth, cardHeight, cardColSpan }: CardProps) => {
       animate={{
         rotateY: rotations.x,
         rotateX: rotations.y,
-        transformPerspective: rotations.z * 100,
+        transformPerspective: rotations.z * 500,
       }}
-      className={`${cardWidth} ${cardHeight} ${cardColSpan} rounded-md flex bg-pink-900 items-center justify-center`}
+      className={`${cardHeight} ${cardColSpan} rounded-md flex bg-black border border-white items-center justify-center`}
     ></motion.div>
   );
 };
