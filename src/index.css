@@ -14,6 +14,6 @@
     @apply font-Manrope text-lightgray font-light leading-[150%] tracking-[0.5px];
   }
   button {
-    @apply hover:cursor-crosshair;
+    @apply hover:cursor-pointer;
   }
 }
