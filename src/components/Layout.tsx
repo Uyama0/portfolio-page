@@ -5,6 +5,7 @@ import { Header } from "./header/Header";
 import { Works } from "./works/Works";
 
 export const Layout = () => {
+
   return (
     <div>
       <CursorBlob />
