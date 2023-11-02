@@ -56,16 +56,16 @@ export const Card = () => {
       }}
       className={`rounded-md flex bg-black border flex-col text-3xl p-4 cursor-crosshair`}
     >
-      <div className="justify-between flex">
+      {/* <div className="justify-between flex">
         <div></div>
         <button>visit</button>
-      </div>
+      </div> */}
       <div className="justify-center items-center flex flex-grow">
-        <h1>Portfolio page</h1>
+        <h1>Soon.</h1>
       </div>
-      <div className="justify-between flex">
+      {/* <div className="justify-between flex">
         <p className="text-2xl">portfolio page 2023</p>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

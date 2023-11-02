@@ -4,6 +4,14 @@ import Miyamoto1 from "../../assets/miyamoto.jpg";
 
 import { bottomRevealAnimation } from "../../utilities/framerVariants/framerAnimation";
 
+const customBottomRevealAnimation = {
+  ...bottomRevealAnimation,
+  onceVisible: (custom: number) => ({
+    ...bottomRevealAnimation.onceVisible,
+    transition: { delay: custom * 0.5 },
+  }),
+};
+
 export const About = () => {
   return (
     <div className="flex flex-col md:flex-row flex-1 h-[calc(100vh-77px)]">
@@ -16,16 +24,18 @@ export const About = () => {
         />
         <div className="max-w-sm">
           <motion.h1
+            custom={1}
             initial="hidden"
             animate="onceVisible"
-            variants={bottomRevealAnimation}
+            variants={customBottomRevealAnimation}
           >
             Inspired by development
           </motion.h1>
           <motion.p
+            custom={2}
             initial="hidden"
             animate="onceVisible"
-            variants={bottomRevealAnimation}
+            variants={customBottomRevealAnimation}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
             mollitia quas corrupti quod, voluptas quam soluta id ex iure quis a
