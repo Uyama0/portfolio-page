@@ -1,5 +1,4 @@
 import Miyamoto1 from "../../assets/miyamoto.jpg";
-import Miyamoto2 from "../../assets/vagabond.jpg";
 
 export const About = () => {
   return (
@@ -12,8 +11,8 @@ export const About = () => {
           alt="miyamoto"
         />
         <div className="max-w-sm">
-          <h1 className="">Inspired by development</h1>
-          <p className="">
+          <h1>Inspired by development</h1>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
             mollitia quas corrupti quod, voluptas quam soluta id ex iure quis a
             deserunt dolore magni laboriosam ipsa illum delectus laudantium

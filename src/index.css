@@ -6,12 +6,11 @@
   body {
     @apply bg-black text-white overflow-x-hidden;
   }
-
   h1 {
-    @apply font-VT323;
+    @apply font-SC text-3xl;
   }
   p {
-    @apply font-Manrope text-lightgray font-light leading-[150%] tracking-[0.5px];
+    @apply font-Manrope text-lightgray font-semibold leading-[150%] tracking-[0.5px];
   }
   button {
     @apply hover:cursor-pointer;

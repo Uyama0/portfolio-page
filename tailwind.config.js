@@ -6,12 +6,12 @@ export default {
     extend: {
       colors: {
         black: "#0f0f0f",
-        lightgray: "#878787",
+        lightgray: "#979797",
         gray: "#272727",
       },
       fontFamily: {
         Manrope: ["Manrope", "sans-serif"],
-        VT323: ["VT323", "monospace"],
+        SC: ["Playfair Display SC", "serif"],
       },
     },
   },

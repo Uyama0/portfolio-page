@@ -54,7 +54,7 @@ export const Card = () => {
         rotateX: rotations.y,
         transformPerspective: rotations.z * 300,
       }}
-      className={`rounded-md flex bg-black border flex-col text-3xl p-4`}
+      className={`rounded-md flex bg-black border flex-col text-3xl p-4 cursor-crosshair`}
     >
       <div className="justify-between flex">
         <div></div>

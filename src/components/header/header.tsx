@@ -1,10 +1,34 @@
 import { Button } from "../../UI/Button";
+import { motion } from "framer-motion";
+
+const revealAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+    },
+  },
+};
 
 export const Header = () => {
   return (
-    <div className="flex flex-1 py-5 border-b border-gray">
-      <div className="flex-1 text-3xl">Uyama</div>
-      <ul className="flex-1 flex-row hidden md:flex md:space-x-16 items-center">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      className="flex flex-1 py-5"
+    >
+      <motion.div variants={revealAnimation} className="flex-1 text-3xl ">
+        Uyama
+      </motion.div>
+      <motion.ul
+        variants={revealAnimation}
+        className="flex-1 flex-row hidden md:flex md:space-x-16 items-center"
+      >
         <li>
           <Button title={"About"} />
         </li>
@@ -14,7 +38,7 @@ export const Header = () => {
         <li>
           <Button title={"Contact"} />
         </li>
-      </ul>
-    </div>
+      </motion.ul>
+    </motion.div>
   );
 };
