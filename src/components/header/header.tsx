@@ -1,32 +1,27 @@
 import { Button } from "../../UI/Button";
 import { motion } from "framer-motion";
 
-const revealAnimation = {
-  hidden: {
-    y: -100,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.6,
-    },
-  },
-};
+import { topRevealAnimation } from "../../utilities/framerVariants/framerAnimation";
 
 export const Header = () => {
   return (
     <motion.div
       initial="hidden"
-      whileInView="visible"
+      whileInView="onceVisible"
       className="flex flex-1 py-5"
     >
-      <motion.div variants={revealAnimation} className="flex-1 text-3xl ">
+      <motion.div
+        initial="hidden"
+        animate="onceVisible"
+        variants={topRevealAnimation}
+        className="flex-1 text-3xl "
+      >
         Uyama
       </motion.div>
       <motion.ul
-        variants={revealAnimation}
+        initial="hidden"
+        animate="onceVisible"
+        variants={topRevealAnimation}
         className="flex-1 flex-row hidden md:flex md:space-x-16 items-center"
       >
         <li>

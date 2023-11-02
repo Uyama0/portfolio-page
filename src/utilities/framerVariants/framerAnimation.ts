@@ -1,22 +1,28 @@
-export const bottomRevealAnimation = {
+export const topRevealAnimation = {
   hidden: {
     y: -100,
     opacity: 0,
   },
-  visible: {
+  onceVisible: {
     y: 0,
     opacity: 1,
+    transition: {
+      duration: 0.6,
+    },
   },
 };
 
-export const topRevealAnimation = {
+export const bottomRevealAnimation = {
   hidden: {
     y: 100,
     opacity: 0,
   },
-  visible: {
+  onceVisible: {
     y: 0,
     opacity: 1,
+    transition: {
+      duration: 0.6,
+    },
   },
 };
 
@@ -25,9 +31,12 @@ export const leftRevealAnimation = {
     x: -100,
     opacity: 0,
   },
-  visible: {
+  onceVisible: {
     x: 0,
     opacity: 1,
+    transition: {
+      duration: 0.6,
+    },
   },
 };
 
@@ -36,9 +45,12 @@ export const rightRevealAnimation = {
     x: 100,
     opacity: 0,
   },
-  visible: {
+  onceVisible: {
     x: 0,
     opacity: 1,
+    transition: {
+      duration: 0.6,
+    },
   },
 };
 
@@ -46,7 +58,10 @@ export const fadeInAnimation = {
   hidden: {
     opacity: 0,
   },
-  visible: {
+  onceVisible: {
     opacity: 1,
+    transition: {
+      duration: 0.6,
+    },
   },
 };

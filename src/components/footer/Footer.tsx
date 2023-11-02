@@ -11,7 +11,7 @@ function Footer() {
               heeeilels@gmail.com
             </h2>
           </div>
-          <div className="flex flex-col md:flex-row justify-center md:justify-end items-end gap-3 md:gap-1 w-full">
+          <div className="flex flex-col md:flex-row justify-center md:justify-end md:items-end gap-3 md:gap-1 w-full">
             <ContactButton title={"Github"} />
             <ContactButton title={"Linkedin"} />
             <ContactButton title={"Download CV"} />

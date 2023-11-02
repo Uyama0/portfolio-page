@@ -1,4 +1,8 @@
+import { motion } from "framer-motion";
+
 import Miyamoto1 from "../../assets/miyamoto.jpg";
+
+import { bottomRevealAnimation } from "../../utilities/framerVariants/framerAnimation";
 
 export const About = () => {
   return (
@@ -11,13 +15,23 @@ export const About = () => {
           alt="miyamoto"
         />
         <div className="max-w-sm">
-          <h1>Inspired by development</h1>
-          <p>
+          <motion.h1
+            initial="hidden"
+            animate="onceVisible"
+            variants={bottomRevealAnimation}
+          >
+            Inspired by development
+          </motion.h1>
+          <motion.p
+            initial="hidden"
+            animate="onceVisible"
+            variants={bottomRevealAnimation}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
             mollitia quas corrupti quod, voluptas quam soluta id ex iure quis a
             deserunt dolore magni laboriosam ipsa illum delectus laudantium
             veniam.
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>

@@ -64,7 +64,7 @@ export const Card = () => {
         <h1>Portfolio page</h1>
       </div>
       <div className="justify-between flex">
-        <p className="">portfolio page 2023</p>
+        <p className="text-2xl">portfolio page 2023</p>
       </div>
     </motion.div>
   );
