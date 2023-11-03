@@ -14,7 +14,10 @@ const customBottomRevealAnimation = {
 
 export const About = () => {
   return (
-    <div className="flex flex-col md:flex-row flex-1 h-[calc(100vh-77px)]">
+    <div
+      id="about"
+      className="flex flex-col md:flex-row flex-1 h-[calc(100vh-77px)]"
+    >
       <div className="flex-1"></div>
       <div className="flex-1 flex flex-col gap-3 justify-center md:items-start">
         <img

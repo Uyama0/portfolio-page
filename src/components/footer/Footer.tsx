@@ -3,7 +3,7 @@ import ContactButton from "../../UI/contactButton/ContactButton";
 function Footer() {
   return (
     <>
-      <footer className="mx-5">
+      <footer className="mx-5" id="contact">
         <div className="flex flex-col md:flex-row gap-3 w-full h-[calc(100vh/2)]">
           <div className="flex flex-col justify-end">
             <h1 className="text-2xl uppercase">get in touch</h1>

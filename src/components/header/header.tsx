@@ -29,13 +29,13 @@ export const Header = () => {
         className="flex-1 flex-row hidden md:flex md:space-x-16 items-center"
       >
         <li>
-          <Button title={"About"} />
+          <Button targetId="about" title={"About"} />
         </li>
         <li>
-          <Button title={"Works"} />
+          <Button targetId="works" title={"Works"} />
         </li>
         <li>
-          <Button title={"Contact"} />
+          <Button targetId="contact" title={"Contact"} />
         </li>
       </motion.ul>
     </motion.div>
