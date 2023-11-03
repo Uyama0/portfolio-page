@@ -3,7 +3,7 @@ export const topRevealAnimation = {
     y: -100,
     opacity: 0,
   },
-  onceVisible: {
+  visible: {
     y: 0,
     opacity: 1,
     transition: {
@@ -17,7 +17,7 @@ export const bottomRevealAnimation = {
     y: 100,
     opacity: 0,
   },
-  onceVisible: {
+  visible: {
     y: 0,
     opacity: 1,
     transition: {
@@ -31,7 +31,7 @@ export const leftRevealAnimation = {
     x: -100,
     opacity: 0,
   },
-  onceVisible: {
+  visible: {
     x: 0,
     opacity: 1,
     transition: {
@@ -45,7 +45,7 @@ export const rightRevealAnimation = {
     x: 100,
     opacity: 0,
   },
-  onceVisible: {
+  visible: {
     x: 0,
     opacity: 1,
     transition: {
@@ -58,7 +58,7 @@ export const fadeInAnimation = {
   hidden: {
     opacity: 0,
   },
-  onceVisible: {
+  visible: {
     opacity: 1,
     transition: {
       duration: 0.6,

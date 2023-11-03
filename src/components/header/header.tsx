@@ -5,22 +5,18 @@ import { topRevealAnimation } from "../../utilities/framerVariants/framerAnimati
 
 const customTopRevealAnimation = {
   ...topRevealAnimation,
-  onceVisible: () => ({
-    ...topRevealAnimation.onceVisible,
+  visible: () => ({
+    ...topRevealAnimation.visible,
     transition: { delay: 1.5, duration: 0.6 },
   }),
 };
 
 export const Header = () => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="onceVisible"
-      className="flex flex-1 py-5"
-    >
+    <motion.div className="flex flex-1 py-5">
       <motion.div
         initial="hidden"
-        animate="onceVisible"
+        animate="visible"
         variants={customTopRevealAnimation}
         className="flex-1 text-3xl "
       >
@@ -28,7 +24,7 @@ export const Header = () => {
       </motion.div>
       <motion.ul
         initial="hidden"
-        animate="onceVisible"
+        animate="visible"
         variants={customTopRevealAnimation}
         className="flex-1 flex-row hidden md:flex md:space-x-16 items-center"
       >
