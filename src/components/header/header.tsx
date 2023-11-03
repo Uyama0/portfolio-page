@@ -3,6 +3,14 @@ import { motion } from "framer-motion";
 
 import { topRevealAnimation } from "../../utilities/framerVariants/framerAnimation";
 
+const customTopRevealAnimation = {
+  ...topRevealAnimation,
+  onceVisible: () => ({
+    ...topRevealAnimation.onceVisible,
+    transition: { delay: 1.5, duration: 0.6 },
+  }),
+};
+
 export const Header = () => {
   return (
     <motion.div
@@ -13,7 +21,7 @@ export const Header = () => {
       <motion.div
         initial="hidden"
         animate="onceVisible"
-        variants={topRevealAnimation}
+        variants={customTopRevealAnimation}
         className="flex-1 text-3xl "
       >
         Uyama
@@ -21,7 +29,7 @@ export const Header = () => {
       <motion.ul
         initial="hidden"
         animate="onceVisible"
-        variants={topRevealAnimation}
+        variants={customTopRevealAnimation}
         className="flex-1 flex-row hidden md:flex md:space-x-16 items-center"
       >
         <li>
