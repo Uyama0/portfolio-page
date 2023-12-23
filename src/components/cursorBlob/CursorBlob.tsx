@@ -36,14 +36,14 @@ export const CursorBlob = () => {
 
   return (
     <>
-      <motion.div
+      {/* <motion.div
         id="blob"
         animate={{ scale: scale }}
         transition={{
           type: "spring",
         }}
       ></motion.div>
-      <div id="blur"></div>
+      <div id="blur"></div> */}
     </>
   );
 };

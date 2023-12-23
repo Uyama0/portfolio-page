@@ -3,7 +3,15 @@ import { motion } from "framer-motion";
 
 import { round, distance } from "../../utilities/tiltCard";
 
-export const Card = () => {
+interface cardProps {
+  workLink?: string;
+  workName?: string;
+}
+
+export const Card = ({
+  workLink = "https://github.com/Uyama0?tab=repositories",
+  workName = "Soon.",
+}: cardProps) => {
   const [rotations, setRotations] = useState({ x: 0, y: 0, z: 0 });
   const [isAnimating, setAnimating] = useState(false);
   const isAnimatingReference = useRef(isAnimating);
@@ -56,16 +64,17 @@ export const Card = () => {
       }}
       className={`rounded-md flex bg-black border flex-col text-3xl p-4 cursor-crosshair`}
     >
-      {/* <div className="justify-between flex">
-        <div></div>
-        <button>visit</button>
-      </div> */}
-      <div className="justify-center items-center flex flex-grow">
-        <h1>Soon.</h1>
+      <div className="justify-between flex relative">
+        <a
+          href={workLink}
+          className="border rounded-lg px-3 py-2 flex absolute right-0"
+        >
+          <span className="text-xl">visit</span>
+        </a>
       </div>
-      {/* <div className="justify-between flex">
-        <p className="text-2xl">portfolio page 2023</p>
-      </div> */}
+      <div className="justify-center items-center flex flex-grow">
+        <h1 className="font-bold">{workName}</h1>
+      </div>
     </motion.div>
   );
 };

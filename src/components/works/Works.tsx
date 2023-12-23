@@ -14,9 +14,15 @@ export const Works = () => {
         variants={bottomRevealAnimation}
         className=" md:grid md:grid-cols-3 h-60 gap-4"
       >
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card
+          workLink="https://github.com/Uyama0/smooth-animated-todo-app-v2"
+          workName="todo v2"
+        />
+        <Card
+          workLink="https://github.com/Uyama0/portfolio-page"
+          workName="portfolio page"
+        />
+        <Card workLink="" />
       </motion.div>
       <motion.div
         initial="hidden"

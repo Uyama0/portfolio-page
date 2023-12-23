@@ -1,3 +1,4 @@
+import { Button } from "../../UI/Button";
 import ContactButton from "../../UI/contactButton/ContactButton";
 
 function Footer() {
@@ -20,7 +21,7 @@ function Footer() {
         <div className="flex justify-between my-4">
           <p>©Uyama</p>
           <p>Portfolio 2023</p>
-          <button className="uppercase underline">Back to top</button>
+          <Button targetId="about" title={"BACK TO TOP"} />
         </div>
       </footer>
     </>
