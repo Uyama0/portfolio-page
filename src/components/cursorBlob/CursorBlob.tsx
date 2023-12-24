@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "./CursorStyle.css";
 
@@ -7,19 +7,6 @@ export const CursorBlob = () => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    const blob = document.getElementById("blob");
-
-    document.body.onpointermove = (event) => {
-      const { clientX, clientY } = event;
-      blob?.animate(
-        {
-          left: `${clientX}px`,
-          top: `${clientY}px`,
-        },
-        { duration: 8000, fill: "forwards" }
-      );
-    };
-
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -31,7 +18,7 @@ export const CursorBlob = () => {
     };
   }, []);
 
-  const scale = 1 + scrollY * 0.001;
+  const scale = 1.3 + scrollY * 0.001;
 
   return (
     <>
