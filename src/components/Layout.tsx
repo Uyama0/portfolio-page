@@ -1,7 +1,7 @@
 import { About } from "./about/About";
 import { CursorBlob } from "./cursorBlob/CursorBlob";
 import Footer from "./footer/Footer";
-import { Header } from "./header/Header";
+import { Header } from "./header/Header.tsx";
 import { Works } from "./works/Works";
 
 export const Layout = () => {
