@@ -16,3 +16,10 @@
     @apply hover:cursor-pointer;
   }
 }
+
+::selection {
+  background: rgb(98, 0, 234);
+}
+::-moz-selection {
+  background: rgb(98, 0, 234);
+}

@@ -4,13 +4,17 @@ import "./ContactButtonStyles.css";
 
 interface ContactButtonProps {
   title: string;
+  contactLink: string;
 }
 
-function ContactButton({ title }: ContactButtonProps) {
+function ContactButton({ title, contactLink }: ContactButtonProps) {
   return (
     <>
       <div>
-        <motion.button id="button">
+        <motion.button
+          id="button"
+          onClick={() => (window.location.href = contactLink)}
+        >
           <h2 className="relative">{title}</h2>
         </motion.button>
       </div>

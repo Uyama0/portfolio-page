@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 
 import { round, distance } from "../../utilities/tiltCard";
 
+import ContactButton from "../../UI/contactButton/ContactButton.js";
+
 interface cardProps {
   workLink?: string;
   workName?: string;
@@ -62,18 +64,16 @@ export const Card = ({
         rotateX: rotations.y,
         transformPerspective: rotations.z * 300,
       }}
-      className={`rounded-md flex bg-black border flex-col text-3xl p-4 cursor-crosshair`}
+      className={`rounded-md flex bg-black border flex-col p-4 cursor-crosshair`}
     >
-      <div className="justify-between flex relative">
+      <div className="justify-center items-center flex flex-grow">
+        <h1 className="font-bold text-xl md:text-3xl flex">{workName}</h1>
         <a
           href={workLink}
-          className="border rounded-lg px-3 py-2 flex absolute right-0"
+          className="border rounded-md px-5 py-2 m-4 flex absolute md:top-0 right-0 "
         >
           <span className="text-xl">visit</span>
         </a>
-      </div>
-      <div className="justify-center items-center flex flex-grow">
-        <h1 className="font-bold">{workName}</h1>
       </div>
     </motion.div>
   );

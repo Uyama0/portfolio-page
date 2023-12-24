@@ -6,13 +6,13 @@ import { bottomRevealAnimation } from "../../utilities/framerVariants/framerAnim
 
 export const Works = () => {
   return (
-    <div id="works" className="grid gap-4">
+    <div id="works" className="grid gap-4 ">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={bottomRevealAnimation}
-        className=" md:grid md:grid-cols-3 h-60 gap-4"
+        className="grid md:grid-cols-3 md:h-60 gap-4"
       >
         <Card
           workLink="https://github.com/Uyama0/smooth-animated-todo-app-v2"
@@ -29,7 +29,7 @@ export const Works = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={bottomRevealAnimation}
-        className="grid md:grid-cols-2 h-80 gap-4"
+        className="grid md:grid-cols-2 md:h-80 gap-4"
       >
         <Card></Card>
         <Card></Card>
@@ -39,7 +39,7 @@ export const Works = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={bottomRevealAnimation}
-        className="grid md:grid-cols-3 h-60 gap-4"
+        className="grid md:grid-cols-3 md:h-60 gap-4"
       >
         <Card></Card>
         <Card></Card>

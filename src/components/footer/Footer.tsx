@@ -8,14 +8,26 @@ function Footer() {
         <div className="flex flex-col md:flex-row gap-3 w-full h-[calc(100vh/2)]">
           <div className="flex flex-col justify-end">
             <h1 className="text-2xl uppercase">get in touch</h1>
-            <h2 className="text-[2.2em] md:text-5xl font-playfair">
+            <a
+              className="text-[2.2em] md:text-5xl font-playfair"
+              href="mailto:heeeilels@gmail.com"
+            >
               heeeilels@gmail.com
-            </h2>
+            </a>
           </div>
           <div className="flex flex-col md:flex-row justify-center md:justify-end md:items-end gap-3 md:gap-1 w-full">
-            <ContactButton title={"Github"} />
-            <ContactButton title={"Linkedin"} />
-            <ContactButton title={"Download CV"} />
+            <ContactButton
+              title={"Github"}
+              contactLink="https://github.com/Uyama0"
+            />
+            <ContactButton
+              title={"Linkedin"}
+              contactLink="https://www.linkedin.com/in/uyama0/"
+            />
+            <ContactButton
+              title={"Download CV"}
+              contactLink="https://github.com/Uyama0"
+            />
           </div>
         </div>
         <div className="flex justify-between my-4">
