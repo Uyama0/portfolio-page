@@ -43,10 +43,10 @@ export const About = () => {
           variants={customBottomRevealAnimation}
           className="max-w-sm"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-          mollitia quas corrupti quod, voluptas quam soluta id ex iure quis a
-          deserunt dolore magni laboriosam ipsa illum delectus laudantium
-          veniam.
+          I realized quite late how pleasant it is to write code. But now I know
+          exactly what I want to do. In particular, I love creating
+          <span className="text-purple-600"> BEAUTIFUL </span>
+          web applications. Well, or not quite beautiful (yet).
         </motion.p>
       </div>
     </div>
