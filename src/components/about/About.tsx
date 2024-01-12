@@ -20,7 +20,11 @@ export const About = () => {
     >
       <div className="md:flex-1"></div>
       <div className="flex-1 flex flex-col gap-3 justify-center md:items-start">
-        <img
+        <motion.img
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={customBottomRevealAnimation}
           className="max-w-sm h-60 md:max-w-sm md:h-64 rounded-xl object-cover"
           src={Miyamoto1}
           alt="miyamoto"
@@ -44,9 +48,7 @@ export const About = () => {
           className="max-w-sm"
         >
           I realized quite late how pleasant it is to write code. But now I know
-          exactly what I want to do. In particular, I love creating
-          <span className="text-purple-600"> BEAUTIFUL </span>
-          web applications. Well, or not quite beautiful (yet).
+          exactly what I want to do.
         </motion.p>
       </div>
     </div>

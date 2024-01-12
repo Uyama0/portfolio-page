@@ -1,5 +1,5 @@
 import { About } from "./about/About";
-import { CursorBlob } from "./cursorBlob/CursorBlob";
+import { CursorBlob } from "./blob/Blob.tsx";
 import Footer from "./footer/Footer";
 import { Header } from "./header/Header.tsx";
 import { Works } from "./works/Works";

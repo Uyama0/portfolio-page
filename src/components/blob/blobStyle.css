@@ -12,6 +12,7 @@
   animation: rotate 30s infinite;
   opacity: 0.8;
   z-index: -2;
+  filter: blur(3vmax);
 }
 
 @keyframes rotate {
@@ -22,15 +23,4 @@
   to {
     rotate: 360deg;
   }
-}
-
-#blur {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  backdrop-filter: blur(7vmax);
-  background: inherit;
 }
