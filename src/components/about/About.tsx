@@ -3,16 +3,15 @@ import { motion } from "framer-motion";
 import Miyamoto1 from "../../assets/miyamoto.jpg";
 
 import { bottomRevealAnimation } from "../../utilities/framerVariants/framerAnimation";
-
-const customBottomRevealAnimation = {
-  ...bottomRevealAnimation,
-  onceVisible: (custom: number) => ({
-    ...bottomRevealAnimation.visible,
-    transition: { delay: custom * 0.5, duration: 0.6 },
-  }),
-};
+import { setPostponedAnimation } from "../../utilities/setPostponedAnimation";
 
 export const About = () => {
+  const customBottomRevealAnimation = setPostponedAnimation({
+    animationProps: bottomRevealAnimation,
+    durationTime: 0.5,
+    delayFactor: 0.6,
+  });
+
   return (
     <div
       id="about"
@@ -30,7 +29,6 @@ export const About = () => {
           alt="miyamoto"
         />
         <motion.h1
-          custom={1}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -40,15 +38,15 @@ export const About = () => {
           Inspired by development
         </motion.h1>
         <motion.p
-          custom={2}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={customBottomRevealAnimation}
           className="max-w-sm"
         >
-          I realized quite late how pleasant it is to write code. But now I know
-          exactly what I want to do.
+          Web developer with passion for building digital services/staff. I
+          realized quite late how pleasant it is to write code. Now I've got a
+          clear idea of what I want to achieve.
         </motion.p>
       </div>
     </div>

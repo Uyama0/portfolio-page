@@ -2,6 +2,7 @@ import { useState, useRef, MouseEvent } from "react";
 import { motion } from "framer-motion";
 
 import { round, distance } from "../../utilities/tiltCard";
+import { bottomRevealAnimation } from "../../utilities/framerVariants/framerAnimation";
 
 interface cardProps {
   workLink?: string;
@@ -55,6 +56,10 @@ export const Card = ({
 
   return (
     <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={bottomRevealAnimation}
       onMouseMove={animate}
       onMouseLeave={stopAnimating}
       animate={{
@@ -62,7 +67,7 @@ export const Card = ({
         rotateX: rotations.y,
         transformPerspective: rotations.z * 300,
       }}
-      className={`rounded-md flex bg-black bg-opacity-30 border flex-col p-4 cursor-crosshair relative`}
+      className={`rounded-md flex bg-black bg-opacity-30 border-2 flex-col p-4 cursor-crosshair relative`}
     >
       <div className="md:justify-center items-center flex flex-grow">
         <h1 className="font-bold text-xl md:text-3xl flex ">{workName}</h1>

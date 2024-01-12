@@ -2,23 +2,22 @@ import { Button } from "../../UI/Button";
 import { motion } from "framer-motion";
 
 import { topRevealAnimation } from "../../utilities/framerVariants/framerAnimation";
-
-const customTopRevealAnimation = {
-  ...topRevealAnimation,
-  visible: () => ({
-    ...topRevealAnimation.visible,
-    transition: { delay: 1.5, duration: 0.6 },
-  }),
-};
+import { setPostponedAnimation } from "../../utilities/setPostponedAnimation";
 
 export const Header = () => {
+  const customTopRevealAnimation = setPostponedAnimation({
+    animationProps: topRevealAnimation,
+    durationTime: 1.5,
+    delayFactor: 0.6,
+  });
+
   return (
-    <motion.div className="flex flex-1 py-5">
+    <div className="flex flex-1 py-5">
       <motion.div
         initial="hidden"
         animate="visible"
         variants={customTopRevealAnimation}
-        className="flex-1 text-3xl "
+        className="flex-1 text-3xl"
       >
         Uyama
       </motion.div>
@@ -38,6 +37,6 @@ export const Header = () => {
           <Button targetId="contact" title={"Contact"} />
         </li>
       </motion.ul>
-    </motion.div>
+    </div>
   );
 };
