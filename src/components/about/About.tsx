@@ -1,11 +1,26 @@
+import { useState, useEffect } from "react";
+
 import { motion } from "framer-motion";
 
-import Miyamoto1 from "../../assets/miyamoto.jpg";
+import hwPx from "../../assets/pixil-frame-1.png";
+import lwPx from "../../assets/pixil-frame-0.png";
 
 import { bottomRevealAnimation } from "../../utilities/framerVariants/framerAnimation";
 import { setPostponedAnimation } from "../../utilities/setPostponedAnimation";
 
 export const About = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = [hwPx, lwPx];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const customBottomRevealAnimation = setPostponedAnimation({
     animationProps: bottomRevealAnimation,
     durationTime: 0.5,
@@ -25,8 +40,8 @@ export const About = () => {
           viewport={{ once: true, amount: 0.2 }}
           variants={customBottomRevealAnimation}
           className="max-w-sm h-60 md:max-w-sm md:h-64 rounded-xl object-cover"
-          src={Miyamoto1}
-          alt="miyamoto"
+          src={images[currentImage]}
+          alt="px"
         />
         <motion.h1
           initial="hidden"
