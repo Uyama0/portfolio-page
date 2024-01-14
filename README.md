@@ -2,9 +2,9 @@
 
 https://uyama.vercel.app/
 
-![Prview](public\preview.png)
+![Preview](./public/preview.png)
 
-## Stack 
+## Stack
 
 - [React](https://react.dev/) - The library for web and native user interfaces
 - [Framer motion](https://www.framer.com/motion/) - A production-ready motion library for React.
@@ -14,7 +14,7 @@ https://uyama.vercel.app/
 
 1. Clone this repo ([how to clone a repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository))
 2. Install dependencies
-3. Run 
+3. Run
 
 ```sh
 npm install
@@ -23,4 +23,3 @@ npm install
 ```sh
 npm run dev
 ```
-
